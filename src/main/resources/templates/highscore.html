@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring MVC</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          th:href="@{/main.css}" />
+</head>
+<body class="d-flex flex-column h-100">
+
+
+<div th:replace="~{fragments/navigation :: navigation}"> </div>
+
+
+<main role="main" class="flex-shrink-0">
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Highest Score!</h1>
+        </div>
+    </div>
+</main>
+
+
+<div  th:replace="~{fragments/footer :: footer}"> </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+</script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<div class="btn-group d-grid gap-2 col-7 mx-auto">
+<div class="content d-grid gap-2 col-7 mx-auto" id="first">
+    Age 13-15<br /> <br />
+    1.<br />
+    2.<br />
+    3.<br />
+    4.<br />
+    5.<br />
+    6.<br />
+    7.<br />
+    8.<br />
+    9.<br />
+    10.<br />
+</div>
+
+<div class="content d-grid gap-2 col-7 mx-auto" id="second">
+    Age 16-18<br /> <br />
+    1.<br />
+    2.<br />
+    3.<br />
+    4.<br />
+    5.<br />
+    6.<br />
+    7.<br />
+    8.<br />
+    9.<br />
+    10.<br />
+</div>
+
+<style>
+
+    h1{
+        text-align: center;
+        font-size: 60px;
+    }
+
+    div.content{
+        height: 600px;
+        width: 400px;
+        border: 2px solid #000000;
+        float: left;
+        margin: 170px;
+        font-size: 28px;
+
+    }
+    div#first{
+        background-color: #c3c3ba ;
+
+    }
+
+    div#second{
+        background-color: #c3c3ba;
+    }
+    #irc-banner a img {
+        position: left;
+
+    }
+
+
+</style>
+    <div style="position:absolute; bottom: 50px; left: -250px; border-radius: 50%;">
+    <a href="index.html">
+        <img class="wrapper" src="images/backbutton.png" alt="Game menu" width="50" height="50" border-radius="50px">
+    </a>
+
+
+
+</div>
+</body>
+</html>
+
+
+

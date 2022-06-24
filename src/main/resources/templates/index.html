@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" class="h-100" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring MVC</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          th:href="@{/main.css}" />
+</head>
+<body class="d-flex flex-column h-100">
+
+
+<div th:replace="~{fragments/navigation :: navigation}"> </div>
+
+
+<main role="main" class="flex-shrink-0">
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">GameMenu!</h1>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="btn-group d-grid gap-2 col-7 mx-auto">
+
+    <button type="button" class="btn btn-success rounded"
+    <button onclick="window.location.href = 'http://localhost:63342/CasinoGame/templates/blackjack.html?_ijt=jb51b8m84e4edf39qs29vidurt&_ij_reload=RELOAD_ON_SAVE';"> BlackJack <span class="badge rounded-pill bg-warning">+10 <span class="visually-hidden">Coins</span></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">BlackJack</a></li>
+    </ul>
+
+    <button type="button" class="btn btn-primary rounded"
+    <button onclick="window.location.href ='http://localhost:63342/CasinoGame/templates/speedcalc.html?_ijt=446bg21s0n2p3gqmamslb17o0u&_ij_reload=RELOAD_ON_SAVE'">Speed Calculation</button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Speed Calculation</a></li>
+    </ul>
+
+    <button type="button" class="btn btn-danger rounded"
+    <button onclick="window.location.href = 'http://localhost:63342/CasinoGame/templates/highscore.html?_ijt=3iv8fvhb6tkbdebjfns9u9vumg&_ij_reload=RELOAD_ON_SAVE';"> Highest Score </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Highest Score</a></li>
+    </ul>
+
+    <div style="position:absolute; bottom: 50px; left: -100px; border-radius: 50%;">
+        <a href="http://localhost:63342/CasinoGame/templates/login.html?_ijt=scfjsqv0hevcgeh9tl94v1qbsa&_ij_reload=RELOAD_ON_SAVE">
+            <img class="wrapper" src="images/backbutton.png" alt="Log In" width="50" height="50" border-radius="50px">
+        </a>
+</div>
+</div>
+
+<div  th:replace="~{fragments/footer :: footer}"> </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+</script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
+
+
+

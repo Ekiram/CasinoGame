@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring MVC</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          th:href="@{/main.css}" />
+</head>
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/login-register-style.css"/>
+    <style>
+        body {
+            background-color: rgb(0, 106, 14);
+        }
+
+        .Head-Text h1{
+            position: absolute;
+            top: 150px;
+            left: 600px;
+        }
+
+        .Head-Text p{
+            position: absolute;
+            size: 200PX;
+            top: 200px;
+            left: 610px;
+
+        }
+
+        .button{
+            background-color: yellow;
+            padding: 12px 25px;
+        }
+        .First-bet{
+            size: 70px;
+            border-radius: 50%;
+        }
+        .Second-bet{
+            size: 70px;
+            border-radius: 50%;
+        }
+        .Third-bet{
+            size: 70px;
+            border-radius: 50%;
+        }
+        .Fourth-bet{
+            size: 90px;
+            border-radius: 50px;
+        }
+        .Fifth-bet{
+            size: 90px;
+            border-radius: 50px;
+        }
+        .Coins-pic{
+            border-radius: 50%;
+        }
+        .action{
+            size: 150px;
+            padding: 20px 30px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .Double{
+            background-color: blue;
+        }
+        .Stand{
+            background-color: red;
+        }
+        .Hit{
+            background-color: yellowgreen;
+        }
+
+</style>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Blackjack</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="wrapper">
+<div class="Cards-pic" style="position: absolute; top:50px; right:700px;">
+    <img class="wrapper" src="images/cards.png" alt="cards" width="70" height="90"> </div>
+
+<div class="Cards2-picture" style="position: absolute; top:110px; right:300px;">
+    <img class="wrapper" src="images/cards.png" alt="cards2" width="70" height="90" > </div>
+
+<div class="Coins-pic" style="border-radius: 50%; position: absolute; top:50px; left:50px; size: 20px;">
+    <img class="wrapper" src="images/coins.png" alt="coins" width="50" height="50" border-radius="50px"> </div>
+
+<div class="Head-Text" style="color:#e0b051">
+    <h1>BLACK JACK</h1>
+    <p>PROBABILITY EDITION</p>
+</div>
+
+<div class="Queen-picture" style="position: absolute; top:300px; left:655px;">
+    <img class="wrapper" src="images/queen.png" alt="Queen" width="70" height="90" > </div>
+
+<div class="Ace-picture" style="position: absolute; top:300px; left:685px;">
+    <img class="wrapper" src="images/ace.png" alt="Ace" width="70" height="90" > </div>
+
+
+<div style="position: absolute; bottom:50px; right:50px;">
+    <button class="button First-bet" onclick="alert('-10 coins')">10</button>
+    <button class="button Second-bet"onclick="alert('-15 coins')">15</button>
+    <button class="button Third-bet"onclick="alert('-20 coins')">20</button>
+</div>
+
+<div style="position: absolute; bottom:100px; right:72px;">
+    <button class="button Fourth-bet"onclick="alert('-1 coin')">MIN</button>
+    <button class="button Fifth-bet"onclick="alert('Max coins')">MAX</button>
+</div>
+
+<div style="position: absolute; bottom: 50px; left: 540px;">
+    <button class="action Double"onclick="alert('double down')">DOUBLE</button>
+    <button class="action Stand"onclick="alert('stand')">STAND</button>
+    <button class="action Hit"onclick="alert('hit')">HIT</button>
+
+</div>
+
+<div style="position:absolute; bottom: 50px; left: 50px; border-radius: 50%;">
+    <a href="index.html">
+   <img class="wrapper" src="images/backbutton.png" alt="Game menu" width="50" height="50" border-radius="50px">
+    </a>
+
+
+</div>
+
+</body>
+</html>

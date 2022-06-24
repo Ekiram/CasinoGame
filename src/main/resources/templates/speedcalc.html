@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring MVC</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          th:href="@{/main.css}" />
+</head>
+<head>
+    <style>
+        body {
+            background-color: rgb(24, 97, 199);
+        }
+        .Coins-pic{
+            border-radius: 50%;
+        }
+
+        .Head-Text h1{
+            position: absolute;
+            top: 150px;
+            left: 500px;
+
+        }
+        .Question {
+            position: absolute;
+            top: 100px;
+            left: 350px;
+        }
+        input[type=text] {
+            width: 320px;
+            height: 250px;
+            position: absolute;
+            top: -66px;
+            left: 200px;
+        }
+        input[type=text]:focus {
+            background-color: rgb(133, 196, 164);
+        }
+
+    </style>
+</head>
+<body>
+<title>Speed calculation</title>
+
+<div class="Coins-pic" style="border-radius: 50%; position: absolute; top:50px; left:50px; size: 20px;">
+    <img class="wrapper" src="images/coins.png" alt="coins" width="50" height="50" > </div>
+
+<div class="Question" style="color:rgb(0, 0, 0)">
+    <p>Question</p></div>
+
+<div class="Head-Text" style="color:rgb(0, 0, 0)">
+    <h1>Answer the following question!</h1> </div>
+
+<div style="position: absolute; top: 400px; left: 350px;">
+<form action="/action_page.php">
+    <label for="answer">Answer: </label>
+    <input type="text" id="answer" name="answer"><br><br>
+</form>
+
+</div>
+
+<div style="position:absolute; bottom: 50px; left: 50px; border-radius: 50%;">
+    <a href="index.html">
+        <img src="images/backbutton.png" alt="Game menu" width="50" height="50" border-radius="50px">
+    </a>
+</div>
+
+<div  th:replace="~{fragments/footer :: footer}"> </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+</script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
